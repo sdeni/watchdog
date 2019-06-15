@@ -19,7 +19,8 @@ TEST(the, test) {
 
     std::string str;
     std::getline(in, str);
-    std::cout << str << std::endl;
+    std::cout <<"Watchdog: client said: " << str << std::endl;
+    out << "Hi from WD!" << std::endl;
 
     client.wait();
 }
